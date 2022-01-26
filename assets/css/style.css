@@ -14,7 +14,6 @@ button{
     cursor: pointer;
 }
 
-
 .content{
     color: #fbfcfd;
     position: absolute;
@@ -91,4 +90,65 @@ h1{
     bottom: 30PX;
 }
 
+.bolhas img{
+    width: 50px;
+    animation: bolhas 7s linear infinite;
+}
 
+.bolhas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bolhas{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bolhas img:nth-child(1){
+    width: 25px;
+    animation-delay: 2s;
+}
+.bolhas img:nth-child(2){
+    width: 35px;
+    animation-delay: 1s;
+}
+.bolhas img:nth-child(3){
+    width: 20px;
+    animation-delay: 3s;
+}
+.bolhas img:nth-child(4){
+    width: 15px;
+    animation-delay: 2s;
+}
+.bolhas img:nth-child(5){
+    width: 40px;
+    animation-delay: 5s;
+}
+.bolhas img:nth-child(6){
+    width: 30px;
+    animation-delay: 3s;
+}
+.bolhas img:nth-child(7){
+    width: 45px;
+    animation-delay: 4s;
+}
